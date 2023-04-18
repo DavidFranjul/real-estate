@@ -16,11 +16,13 @@ import TextContextBox from "@/features/common/modules/TextContentBox/TextContent
 import PropertyYoutubeEmbed from "@/features/Property/components/PropertyYoutubeEmbed/PropertyYoutubeEmbed";
 import PropertyMatterPortContent from "@/features/Property/components/PropertyMatterPortContent/PropertyMatterPortContent";
 import { getProperty } from "@/features/Property/components/api/getProperty";
+import { axios } from "@/lib/axios";
+import { useEffect, useState } from "react";
 
-const PropertySingle = ({ property }) => {
+const Properties = ({ propertySingle }) => {
+  // console.log(propertySingle);
   const {
     address,
-    coverPhoto,
     propertyType,
     price,
     title,
@@ -34,8 +36,8 @@ const PropertySingle = ({ property }) => {
     coverVideo,
     panorama,
     amenities,
-    furnished,
-  } = usePropertyFormat(property);
+  } = usePropertyFormat(propertySingle);
+  // console.log(getServerSideProps());
 
   return (
     <DefaultLayout>
@@ -60,13 +62,13 @@ const PropertySingle = ({ property }) => {
               color={"blue.600"}
               textAlign={"center"}
               alignItems={"center"}
-              flexDirection={{ base: "col", sm: "row" }}
+              flexDirection={{ base: "column", sm: "row" }}
               gap={".5rem"}
               marginY={{ base: "1rem", sm: "0" }}
             >
               <TbMapPin />
               <Text fontWeight={"light"}>
-                {address} - id:{externalID}
+                {address} - ID:{externalID}
               </Text>
               <Badge colorScheme="green">{purpose}</Badge>
             </Flex>
@@ -120,14 +122,25 @@ const PropertySingle = ({ property }) => {
   );
 };
 
-export default PropertySingle;
+export default Properties;
 
 export async function getServerSideProps(context) {
   const { id } = context.query;
-  const property = await getProperty(id);
+  const propertySingle = await getProperty(id);
+  console.log(context);
   // const property = require("@/features/data/property");
+  // console.log(propertySingle);
 
   return {
-    props: { property: property },
+    props: {
+      propertySingle,
+    },
   };
 }
+
+// const PropertySingle = ({ property }) => {
+// const [property, setProperty] = useState();
+
+// useEffect(() => {
+// !!property && setProperty(data);
+// }, [property]);

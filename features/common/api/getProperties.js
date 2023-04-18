@@ -6,7 +6,7 @@ export const getProperties = async (num) => {
       locationExternalIDs: "5002,6020",
       purpose: "for-sale",
       hitsPerPage: num,
-      lang: "en, es",
+      lang: "en",
       sort: "city-level-score",
       hasVideo: true,
       hasFloorPlan: true,

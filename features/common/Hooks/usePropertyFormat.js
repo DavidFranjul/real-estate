@@ -1,4 +1,6 @@
 export const usePropertyFormat = (property) => {
+  console.log(property.location);
+
   const address = property.location.map((item) => item.name).join(", ");
   const coverPhoto = property.coverPhoto.url;
   const propertyType = `${property.category[0].name},${property.category[1].name}`;
@@ -23,7 +25,7 @@ export const usePropertyFormat = (property) => {
 
   const amenities = property.amenities
     ?.flatMap(({ amenities }) => amenities)
-    .map((item) => item && item.text);
+    .map((item) => item?.text);
 
   const furnished = property.furnishingStatus;
 
