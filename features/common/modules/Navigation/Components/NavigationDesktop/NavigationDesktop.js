@@ -25,14 +25,14 @@ const NavigationDekstop = () => {
             {navigationLinks.map((item) => (
               <NavigationLink key={item.title} {...item} />
             ))}
-            <Button
-              padding="1.5rem"
-              colorScheme="twitter"
-              fontSize="0.8rem"
-              fontWeight="medium"
-            >
-              Create Listing
-            </Button>
+            {/* <Button
+                  padding="1.5rem"
+                  colorScheme="twitter"
+                  fontSize="0.8rem"
+                  fontWeight="medium"
+                >
+                  Create Listing
+                </Button> */}
           </Flex>
         </Flex>
       </Box>

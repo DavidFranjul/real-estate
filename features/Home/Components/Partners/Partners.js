@@ -12,7 +12,6 @@ const Partners = () => {
           padding={{ base: "2rem", sm: "3rem" }}
           filter="grayscale(1)"
           opacity="0.4"
-          marginLeft="2rem"
         />
       ))}
     </SimpleGrid>

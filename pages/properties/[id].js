@@ -20,7 +20,6 @@ import { axios } from "@/lib/axios";
 import { useEffect, useState } from "react";
 
 const Properties = ({ propertySingle }) => {
-  // console.log(propertySingle);
   const {
     address,
     propertyType,
@@ -37,7 +36,6 @@ const Properties = ({ propertySingle }) => {
     panorama,
     amenities,
   } = usePropertyFormat(propertySingle);
-  // console.log(getServerSideProps());
 
   return (
     <DefaultLayout>
@@ -73,10 +71,10 @@ const Properties = ({ propertySingle }) => {
               <Badge colorScheme="green">{purpose}</Badge>
             </Flex>
           </GridItem>
-          <GridItem colSpan={{ base: 6, sm: 3 }}>
+          <GridItem colSpan={{ base: 6, sm: 6, md: 3 }}>
             <PropertyThumbnailSlider photos={photos}></PropertyThumbnailSlider>
           </GridItem>
-          <GridItem colSpan={{ base: 6, sm: 3 }}>
+          <GridItem colSpan={{ base: 6, sm: 6, md: 3 }}>
             <PropertyStats
               rooms={rooms}
               baths={baths}
@@ -127,9 +125,7 @@ export default Properties;
 export async function getServerSideProps(context) {
   const { id } = context.query;
   const propertySingle = await getProperty(id);
-  console.log(context);
   // const property = require("@/features/data/property");
-  // console.log(propertySingle);
 
   return {
     props: {

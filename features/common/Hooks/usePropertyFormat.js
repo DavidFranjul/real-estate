@@ -1,6 +1,4 @@
 export const usePropertyFormat = (property) => {
-  console.log(property.location);
-
   const address = property.location.map((item) => item.name).join(", ");
   const coverPhoto = property.coverPhoto.url;
   const propertyType = `${property.category[0].name},${property.category[1].name}`;
