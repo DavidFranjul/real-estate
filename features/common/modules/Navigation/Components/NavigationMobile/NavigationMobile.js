@@ -38,6 +38,7 @@ const NavigationMobile = () => {
             icon={<HamburgerIcon />}
             variant="outline"
           />
+
           <MenuList>
             {navigationLinks.map((item) => (
               <NavigationLink key={item.title} {...item} />

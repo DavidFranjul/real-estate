@@ -6,11 +6,12 @@ const HeroBanner = () => {
     <Fade in>
       <Box
         position="relative"
-        minHeight={{ base: "110vh", sm: "60vh", md: "80vh" }}
+        minHeight={{ base: "110vh", sm: "70vh", md: "80vh" }}
         backgroundImage={"url('./hero/heroBg.jpg')"}
         backgroundPosition={"center"}
         backgroundSize="cover"
         backgroundAttachment={"fixed"}
+        marginTop="2rem"
       >
         <Box
           position="absolute"
@@ -33,7 +34,7 @@ const HeroBanner = () => {
           bottom="0"
           top="0"
           margin="0 auto"
-          padding="2rem"
+          paddingTop="2rem"
         >
           <Box width={{ base: "100%", sm: "50%" }}>
             <Text
