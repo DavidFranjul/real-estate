@@ -17,7 +17,7 @@ const Testimonials = () => {
           paddingX={"2rem"}
           textAlign={"center"}
         >
-          Testimonials
+          Testimoniales
         </Text>
         <Text
           fontSize={"2xl"}
@@ -27,7 +27,7 @@ const Testimonials = () => {
           paddingX={"2rem"}
           textAlign={"center"}
         >
-          Here's what our valued clients have to say
+          Esto dicen nuestros apreciados clientes de nosotros
         </Text>
         <SimpleGrid
           columns={"3"}

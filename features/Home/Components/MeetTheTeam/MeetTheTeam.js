@@ -18,7 +18,7 @@ const meetTheTeam = () => {
         paddingY=".5rem"
         lineHeight="shorter"
       >
-        Meet The Team
+        Conoce al equipo
       </Text>
       <Text
         textAlign={"center"}
@@ -27,7 +27,7 @@ const meetTheTeam = () => {
         marginBottom={"1rem"}
         paddingX="2rem"
       >
-        The best in the industry.
+        Los <strong>mejores</strong> en la industria
       </Text>
 
       <Flex

@@ -18,7 +18,8 @@ const NavigationMobile = () => {
   return (
     <Box
       color={"blue.600"}
-      padding="2rem"
+      padding="1rem"
+      paddingTop="1rem"
       backgroundColor={"white"}
       display={{ base: "block", md: "none" }}
     >
@@ -54,12 +55,11 @@ export default NavigationMobile;
 
 const NavigationLink = ({ title, link, icon }) => {
   return (
-    <>
-      <Link href={link} />
+    <Link href={link}>
       <MenuItem alignItems="center" gap="0.5rem">
         {icon}
         {title}
       </MenuItem>
-    </>
+    </Link>
   );
 };

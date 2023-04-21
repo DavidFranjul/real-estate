@@ -1,7 +1,7 @@
 export const agents = [
   {
     name: "Lucila Guerrero",
-    title: "Real estate associate ",
+    title: "Asociada de bienes raices ",
     image: "./agents/agent1.webp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
@@ -15,7 +15,7 @@ export const agents = [
   // },
   {
     name: "Hector Franjul",
-    title: "Real estate agent / Accountant",
+    title: "Agente de bienes raices / Contador inmobiliario",
     image: "./agents/agent2.webp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",

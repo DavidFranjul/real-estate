@@ -22,7 +22,7 @@ const HeroBanner = () => {
         />
         <Box
           display="flex"
-          flexDirection={{ base: "column", sm: "row" }}
+          flexDirection={{ base: "column", sm: "column", md: "row" }}
           alignItems="center"
           justifyContent={{ base: "flex-start", sm: "space-between" }}
           maxWidth="1280px"
@@ -34,29 +34,35 @@ const HeroBanner = () => {
           bottom="0"
           top="0"
           margin="0 auto"
-          paddingTop="2rem"
+          padding="1rem"
+          paddingTop="1rem"
+          paddingBottom="1rem"
         >
-          <Box width={{ base: "100%", sm: "50%" }}>
+          <Box width={{ base: "100%", sm: "75%", md: "50%" }}>
             <Text
-              fontSize={{ base: "4xl", sm: "5xl" }}
+              fontSize={{ base: "3xl", sm: "3xl", md: "5xl" }}
               lineHeight="shorter"
+              marginTop="1rem"
               marginBottom="1.5rem"
               marginRight={"1rem"}
             >
-              Download our new<strong> Property catalog </strong>today ...
+              Descarga nuestro nuevo<strong> catalogo de propiedades </strong>
+              hoy ...
             </Text>
             <Text
-              fontSize={{ base: "lg", sm: "2xl" }}
-              lineHeight="shorter"
-              marginTop="3rem"
+              fontSize={{ base: "4xl", sm: "2xl" }}
+              lineHeight=""
+              marginTop=".5rem"
+              width={{ base: "15rem", sm: "15rem" }}
+              paddingBottom={{ base: "10rem", sm: "3rem" }}
             >
-              And find a <strong>home</strong> that's perfect{" "}
-              <strong>for you</strong>
+              Y encuentra un <strong>hogar</strong> perfecto
+              <strong> para ti</strong>
             </Text>
           </Box>
           <Box
             width={{ base: "100%", sm: "auto" }}
-            marginTop={{ base: "2rem", sm: "0" }}
+            marginTop={{ base: "2rem", sm: "5rem", md: "7rem" }}
           >
             <HeroForm />
           </Box>

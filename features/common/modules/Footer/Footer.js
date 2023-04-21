@@ -6,7 +6,7 @@ import { services, about, ourOffices, workWithUs } from "./footerConsts";
 const Footer = () => {
   return (
     <Box backgroundColor={"blue.600"}>
-      <Box
+      {/* <Box
         maxWidth={"1280px"}
         margin={"0 auto"}
         paddingY={"3rem"}
@@ -43,7 +43,7 @@ const Footer = () => {
             ))}
           </Flex>
         </SimpleGrid>
-      </Box>
+      </Box> */}
       <Box
         backgroundColor="blue.900"
         display="flex"

@@ -3,7 +3,7 @@ import PropertySlider from "./Components/PropertySlider";
 
 const featuredProperties = ({ featuredProperties }) => {
   return (
-    <Box backgroundColor="blue.50">
+    <Box backgroundColor="blue.50" padding="1rem">
       <Box
         maxWidth="1280px"
         margin="0 auto"
@@ -18,7 +18,7 @@ const featuredProperties = ({ featuredProperties }) => {
           textAlign="center"
         >
           {" "}
-          Discover our featured <strong>properties</strong>
+          Nuestras propiedades <strong>destacadas</strong>
         </Text>
         <Text
           fontSize="2xl"
@@ -28,7 +28,7 @@ const featuredProperties = ({ featuredProperties }) => {
           paddingX="2rem"
           textAlign={"center"}
         >
-          A selection of our best properties
+          Una seleccion de nuestras <strong>mejores</strong> propiedades
         </Text>
         <PropertySlider featuredProperties={featuredProperties} />
       </Box>

@@ -7,7 +7,7 @@ const NavigationDekstop = () => {
   return (
     <Box
       color={"blue.600"}
-      padding="2rem"
+      paddingTop="2rem"
       backgroundColor={"white"}
       display={{ base: "none", md: "block" }}
     >
